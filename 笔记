@@ -1,0 +1,12 @@
+优点：轻量快速，只需要一个index.html搭配一个README.md即可快速书写（或者多级目录构建多篇MarkDown。）
+
+1， 全局安装docsify-cli
+  > npm i docsify-cli -g
+
+2, 初始化编写文档的目录【docsify init ./目录名称】
+  > docsify init ./docs
+
+  文件说明：
+    index.html 作为入口文件
+    README.md 作为主页
+    .nojekyll: 防止GitHub Pages忽略以下划线开头的文件
