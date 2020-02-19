@@ -8,5 +8,5 @@
 - Don't miss yesterday
 - to grasp today
 
-[GitHub](/)
-[Get Started](/guide)
+[Markdown](/markdown)
+[Get Started](/home)

@@ -2,29 +2,58 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>namedL</title>
+  <title>namedL 学习笔记</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="public/vue.css">
+  <link rel="shortcut icon" href="public/l.ico" />
 </head>
 <body>
-  <div id="app">努力加载中...</div>
+  <div id="app"></div>
   <script>
     window.$docsify = {
       name: 'namedL',
       repo: '',
       loadSidebar: true, //拥有侧边栏
-      loadNavbar: true, //拥有导航栏
-      coverpage: true,  //拥有封面
-      subMaxLevel: 2,
-      //homepage: "home.md",
-      //basePath: "../study/",
+      //loadNavbar: true, //拥有导航栏
+      //coverpage: true,  //拥有封面
+      subMaxLevel: 6,
+      onlyCover: true, //只显示封面，（否则封面和首页同时显示，封面在上，首页在下）
+      homepage: "home.md",
       auto2top: true, //更改路线时滚动到屏幕顶部
       themeColor: '#3F51B5',
-      routerMode: 'history'
+      copyCode: {
+        buttonText: '复制代码',
+        errorText: '失败',
+        successText: '成功'
+      },
+      //routerMode: 'history',
+      // 搜索完整配置参数
+      search: {
+        maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
+        paths: 'auto',                      // [] or 'auto'，匹配文件路径
+        placeholder: '搜索',  // 搜索提示框文字
+        noData: '无数据',          // 找不到结果文字提示
+        depth: 3,                       // 搜索标题的最大程级, 1 - 6
+      }
     }
   </script>
   <script src="public/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <!-- 代码高亮插件-->  
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-c.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-cpp.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-css.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-http.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-properties.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
+  <!-- 代码一键拷贝-->
+  <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 </html>

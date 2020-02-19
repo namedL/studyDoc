@@ -10,3 +10,5 @@
     index.html 作为入口文件
     README.md 作为主页
     .nojekyll: 防止GitHub Pages忽略以下划线开头的文件
+    
+3, 启动服务： docsify serve
