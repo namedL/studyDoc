@@ -12,3 +12,10 @@
     .nojekyll: 防止GitHub Pages忽略以下划线开头的文件
     
 3, 启动服务： docsify serve
+
+-------------------------
+
+markdown: 
+  1, mavon-editor vue组件
+  2，katex 插件
+  3, showdown 插件

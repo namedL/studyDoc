@@ -5,7 +5,8 @@
 4. Markdown 编写的文档后缀为 .md, .markdown
 
 # 1.Markdown 标题
-  ## 1.1 使用 = 或者 - 标记语法
+## 1.1 使用 = 或者 - 标记语法
+
   <pre>
     我展示的是一级标题
     =================
@@ -64,7 +65,7 @@ Markdown 段落没有特殊的格式,直接编写文字就好，段落的换行�
 </pre>
 
 生成一个脚注1[^footnote].  
-  [^footnote]: 这里是 **脚注** 的 *内容*.
+[^footnote]: 这里是 **脚注** 的 *内容*.
 
 # 3.Markdown 列表 
 Markdown 支持有序列表和无序列表。  
@@ -171,8 +172,8 @@ $(document).ready(function () {
 这个链接用 runoob 作为网址变量 [Runoob][runoob]
 然后在文档的结尾为变量赋值（网址）
 
-  [1]: http://www.google.com/
-  [runoob]: http://www.runoob.com/
+[1]: http://www.google.com/
+[runoob]: http://www.runoob.com/
 
 # 7.图片
 ## 7.1. 基本图片

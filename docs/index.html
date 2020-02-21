@@ -15,6 +15,7 @@
     window.$docsify = {
       name: 'namedL',
       repo: '',
+      '/.*/_sidebar.md': '/_sidebar.md',
       loadSidebar: true, //拥有侧边栏
       //loadNavbar: true, //拥有导航栏
       //coverpage: true,  //拥有封面
@@ -36,7 +37,14 @@
         placeholder: '搜索',  // 搜索提示框文字
         noData: '无数据',          // 找不到结果文字提示
         depth: 3,                       // 搜索标题的最大程级, 1 - 6
-      }
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            
+          })
+        }
+      ]
     }
   </script>
   <script src="public/docsify.min.js"></script>
