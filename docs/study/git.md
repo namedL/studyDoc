@@ -2,11 +2,11 @@
 
 ## 1.  初始化数据仓库
    git init  //初始化本地要存放数据的仓库根目录
-   
+
    本地初始化仓库后，在github上新建一个仓库：
    配置远程仓库地址：
   git remote add origin https://github.com/namedL/git-cli.git
-   
+
      git remote -v  ##查看远程仓库，fetch为拉取地址，push为推送地址
     推送本地文件到远程仓库：
      git push -u origin master
@@ -14,10 +14,10 @@
    【报错：Updates were rejected because the remote contains work that you do 
      或者：fatal: refusing to merge unrelated histories   #拒绝合并不相关历史】
   git pull origin master --allow-unrelated-histories   #合并两个仓库的历史
-   
+
 ## 2. 拉取远程数据
   git clone [url]   //在远程克隆数据到本地
-  
+
 ## 3. 添加（或删除）修改的代码到暂存区
   git add/rm 1.html 2.html *.c      //添加（或删除）修改的代码到暂存区
    git add .    // #添加当前目录下的所有文件到暂存区
@@ -73,26 +73,26 @@
 
 ## 15. 仓库分支操作
     1，查看本地分支：
-	git branch
+    git branch
     2,查看远程分支
-	git branch -r
+    git branch -r
     3,查看所有分支
-	git branch -a
+    git branch -a
     4，本地创建分支
-	git branch [branch name]
+    git branch [branch name]
     5,切换到新分支
-	git checkout [branch name]
+    git checkout [branch name]
     6,创建+切换分支
-	git checkout -b [branch name]
+    git checkout -b [branch name]
     7,将新分支推送到github
-	git push origin [branch name]
+    git push origin [branch name]
     8,删除本地分支：
-	git branch -d [branch name]
+    git branch -d [branch name]
     9，删除github远程分支
-	git push origin :[branch name]
+    git push origin :[branch name]
     10,clone分支
     	git clone -b <branch> <remote_repo> <目录别名>
-		例子 :git clone -b 1.x http://git.strongsoft.net:6280/devx/TaskManager.git TaskManager_1.x
+    	例子 :git clone -b 1.x http://git.strongsoft.net:6280/devx/TaskManager.git TaskManager_1.x
     11,合并指定分支到当前分支：【此时应该先切换回master分支, 使用参数-no-ff可以存在合并记录，-m添加合并说明】
       git merge --no-ff -m "merge with no-ff" [branch name]    
 
