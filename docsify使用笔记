@@ -1,4 +1,4 @@
-优点：轻量快速，只需要一个index.html搭配一个README.md即可快速书写（或者多级目录构建多篇MarkDown。）
+优点：轻量快速，只需要一个index.html搭配一个README.md即可快速书写（或者多级目录构建多篇MarkDown）
 
 1， 全局安装docsify-cli
   > npm i docsify-cli -g
@@ -12,10 +12,3 @@
     .nojekyll: 防止GitHub Pages忽略以下划线开头的文件
     
 3, 启动服务： docsify serve
-
--------------------------
-
-markdown: 
-  1, mavon-editor vue组件
-  2，katex 插件
-  3, showdown 插件

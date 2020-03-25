@@ -1,29 +1,37 @@
 # git常用命令
 
 ## 1.  初始化数据仓库
-   git init  //初始化本地要存放数据的仓库根目录
+```
+git init    //初始化本地要存放数据的仓库根目录
+```
 
-   本地初始化仓库后，在github上新建一个仓库：
-   配置远程仓库地址：
-  git remote add origin https://github.com/namedL/git-cli.git
+   本地初始化仓库后，在github上新建一个仓库,   
+   配置远程仓库地址：git remote add origin https://github.com/namedL/git-cli.git
 
      git remote -v  ##查看远程仓库，fetch为拉取地址，push为推送地址
     推送本地文件到远程仓库：
      git push -u origin master
    -------推送报错，则可执行如下命令，在重新推送-------  
-   【报错：Updates were rejected because the remote contains work that you do 
-     或者：fatal: refusing to merge unrelated histories   #拒绝合并不相关历史】
+   【报错：Updates were rejected because the remote contains work that you do 或者：fatal: refusing to merge unrelated histories   #拒绝合并不相关历史】	
   git pull origin master --allow-unrelated-histories   #合并两个仓库的历史
 
 ## 2. 拉取远程数据
-  git clone [url]   //在远程克隆数据到本地
+  ```
+git clone [url]   //在远程克隆数据到本地
+  ```
+
+
 
 ## 3. 添加（或删除）修改的代码到暂存区
-  git add/rm 1.html 2.html *.c      //添加（或删除）修改的代码到暂存区
-   git add .    // #添加当前目录下的所有文件到暂存区
-   git commit -m 'message'    //添加暂存区数据到本地仓库
-   git commit -am 'message' #不加入缓存，直接提交到仓库
-   git commit --amend //此命令会让你重新输出提交日志
+  ```
+git add/rm 1.html 2.html *.c   //添加（或删除）修改的代码到暂存区
+git add .    // #添加当前目录下的所有文件到暂存区
+git commit -m 'message'    //添加暂存区数据到本地仓库
+git commit -am 'message' #不加入缓存，直接提交到仓库
+git commit --amend //此命令会让你重新输出提交日志
+  ```
+
+
 
 ## 4. git中管理状态
 	git status -s   #当前文档在git中管理状态
@@ -125,7 +133,11 @@
 
 ## 22. vim 退出
 【最快捷的方法：按了ESC后，直接按shift+zz，或者切换到大写模式按ZZ，就可以保存退出了，即是按2下大写的Z】
-     Esc
-     wq #w：write，写入 / q：quit，退出
-     q! #不保存退出
-     !  #强制退出
+
+   ```
+Esc
+wq #w：write，写入 / q：quit，退出
+q! #不保存退出
+!  #强制退出
+   ```
+
