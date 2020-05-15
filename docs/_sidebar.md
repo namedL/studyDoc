@@ -5,7 +5,7 @@
 * HTML
   * [入门](study/html/html1.md)
   * [基础](study/html/html2.md)
-* [PHP](/study/php)
+* [PHP](/study/php.md)
 
 
 
