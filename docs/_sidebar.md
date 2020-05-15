@@ -14,4 +14,3 @@
   * [nginx高级模块](study/nginx/nginx高级模块.md)
   * [nginx更多](study/nginx/nginx更多.md)
   * [nginx配置](study/nginx/nginxConf.md)
-* [Guide](/php.md)
